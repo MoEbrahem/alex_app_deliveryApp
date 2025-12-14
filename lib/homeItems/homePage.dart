@@ -14,19 +14,24 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          backgroundColor: AppColor.primaryColor,
-          shape: const CircleBorder(),
+
+        // floatingActionButton: FloatingActionButton(
+        //   onPressed: () {},
+        //   backgroundColor: AppColor.primaryColor,
+        //   shape: const CircleBorder(),
           
-          child: InkWell(
-            onTap: (){
-              Navigator.of(context).push(MaterialPageRoute(builder: (context)=> const ShoppingCart()));
-            },
-            child: Image.asset("assets/images/basket.png",fit: BoxFit.fill,)),
-        ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        //   child:
+        // InkWell(
+        //     onTap: (){
+        //       Navigator.of(context).push(MaterialPageRoute(builder: (context)=> const ShoppingCart()));
+        //     },
+        //     child: Image.asset("assets/images/basket.png",fit: BoxFit.fill,)
+        // ),
+        // ),
+        // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        
         bottomNavigationBar: const CustomBottomNavBar(),
+        
         appBar: AppBar(
           toolbarHeight: 70,
           backgroundColor: AppColor.whiteColor,
